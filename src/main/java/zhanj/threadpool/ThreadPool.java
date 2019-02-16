@@ -12,7 +12,7 @@ public class ThreadPool {
 
     private final List<Worker> workers;
 
-    private int nThreads = 0;
+    private volatile int nThreads = 0;
 
     public ThreadPool(int n) {
         MAX_THREADS = n;
